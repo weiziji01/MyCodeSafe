@@ -1,0 +1,2755 @@
+{
+    "nodes": [
+        {
+            "id": "68419",
+            "name": "平安银行",
+            "value": "68419",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#87C2D2"
+                }
+            }
+        },
+        {
+            "id": "68071",
+            "name": "银行",
+            "value": "68071",
+            "category": "概念",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F08B9D"
+                }
+            }
+        },
+        {
+            "id": "68084",
+            "name": "MSCI",
+            "value": "68084",
+            "category": "概念",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F08B9D"
+                }
+            }
+        },
+        {
+            "id": "58602",
+            "name": "20181227",
+            "value": "58602",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58603",
+            "name": "20181226",
+            "value": "58603",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58604",
+            "name": "20181219",
+            "value": "58604",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58605",
+            "name": "20181218",
+            "value": "58605",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58606",
+            "name": "20181208",
+            "value": "58606",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58607",
+            "name": "20181123",
+            "value": "58607",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58608",
+            "name": "20181024",
+            "value": "58608",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58609",
+            "name": "20181024",
+            "value": "58609",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58610",
+            "name": "20181024",
+            "value": "58610",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58611",
+            "name": "20181024",
+            "value": "58611",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58612",
+            "name": "20180816",
+            "value": "58612",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58613",
+            "name": "20180816",
+            "value": "58613",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58614",
+            "name": "20180816",
+            "value": "58614",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58615",
+            "name": "20180816",
+            "value": "58615",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58616",
+            "name": "20180816",
+            "value": "58616",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58617",
+            "name": "20180816",
+            "value": "58617",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58618",
+            "name": "20180803",
+            "value": "58618",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58619",
+            "name": "20180803",
+            "value": "58619",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58620",
+            "name": "20180706",
+            "value": "58620",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58621",
+            "name": "20180621",
+            "value": "58621",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58622",
+            "name": "20180621",
+            "value": "58622",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58623",
+            "name": "20180621",
+            "value": "58623",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58624",
+            "name": "20180609",
+            "value": "58624",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58625",
+            "name": "20180607",
+            "value": "58625",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58626",
+            "name": "20180607",
+            "value": "58626",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58627",
+            "name": "20180529",
+            "value": "58627",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58628",
+            "name": "20180529",
+            "value": "58628",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58629",
+            "name": "20180529",
+            "value": "58629",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58630",
+            "name": "20180518",
+            "value": "58630",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58631",
+            "name": "20180518",
+            "value": "58631",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58632",
+            "name": "20180420",
+            "value": "58632",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58633",
+            "name": "20180420",
+            "value": "58633",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58634",
+            "name": "20180420",
+            "value": "58634",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58635",
+            "name": "20180420",
+            "value": "58635",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58636",
+            "name": "20180404",
+            "value": "58636",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58637",
+            "name": "20180327",
+            "value": "58637",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58638",
+            "name": "20180315",
+            "value": "58638",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58639",
+            "name": "20180315",
+            "value": "58639",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58640",
+            "name": "20180315",
+            "value": "58640",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58641",
+            "name": "20180315",
+            "value": "58641",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58642",
+            "name": "20180315",
+            "value": "58642",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58643",
+            "name": "20180315",
+            "value": "58643",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58644",
+            "name": "20180315",
+            "value": "58644",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58645",
+            "name": "20180315",
+            "value": "58645",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58646",
+            "name": "20180315",
+            "value": "58646",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58647",
+            "name": "20180315",
+            "value": "58647",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58648",
+            "name": "20180315",
+            "value": "58648",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58649",
+            "name": "20180315",
+            "value": "58649",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58650",
+            "name": "20180315",
+            "value": "58650",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "58651",
+            "name": "20180315",
+            "value": "58651",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191068",
+            "name": "20181227",
+            "value": "191068",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191069",
+            "name": "20181226",
+            "value": "191069",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191070",
+            "name": "20181219",
+            "value": "191070",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191071",
+            "name": "20181218",
+            "value": "191071",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191072",
+            "name": "20181208",
+            "value": "191072",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191073",
+            "name": "20181123",
+            "value": "191073",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191074",
+            "name": "20181024",
+            "value": "191074",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191075",
+            "name": "20181024",
+            "value": "191075",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191076",
+            "name": "20181024",
+            "value": "191076",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191077",
+            "name": "20181024",
+            "value": "191077",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191078",
+            "name": "20181227",
+            "value": "191078",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191079",
+            "name": "20181226",
+            "value": "191079",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191080",
+            "name": "20181219",
+            "value": "191080",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191081",
+            "name": "20181218",
+            "value": "191081",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191082",
+            "name": "20181208",
+            "value": "191082",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191083",
+            "name": "20181123",
+            "value": "191083",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191084",
+            "name": "20181024",
+            "value": "191084",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191085",
+            "name": "20181024",
+            "value": "191085",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191086",
+            "name": "20181024",
+            "value": "191086",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191087",
+            "name": "20181024",
+            "value": "191087",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191088",
+            "name": "20180816",
+            "value": "191088",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191089",
+            "name": "20180816",
+            "value": "191089",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191090",
+            "name": "20180816",
+            "value": "191090",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191091",
+            "name": "20180816",
+            "value": "191091",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191092",
+            "name": "20180816",
+            "value": "191092",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191093",
+            "name": "20180816",
+            "value": "191093",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191094",
+            "name": "20180803",
+            "value": "191094",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191095",
+            "name": "20180803",
+            "value": "191095",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191096",
+            "name": "20180706",
+            "value": "191096",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191097",
+            "name": "20180621",
+            "value": "191097",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191098",
+            "name": "20180621",
+            "value": "191098",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191099",
+            "name": "20180621",
+            "value": "191099",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191100",
+            "name": "20180609",
+            "value": "191100",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191101",
+            "name": "20180607",
+            "value": "191101",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191102",
+            "name": "20180607",
+            "value": "191102",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191103",
+            "name": "20180529",
+            "value": "191103",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191104",
+            "name": "20180529",
+            "value": "191104",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191105",
+            "name": "20180529",
+            "value": "191105",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191106",
+            "name": "20180518",
+            "value": "191106",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191107",
+            "name": "20180518",
+            "value": "191107",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191108",
+            "name": "20180420",
+            "value": "191108",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191109",
+            "name": "20180420",
+            "value": "191109",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191110",
+            "name": "20180420",
+            "value": "191110",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191111",
+            "name": "20180420",
+            "value": "191111",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191112",
+            "name": "20180404",
+            "value": "191112",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191113",
+            "name": "20180327",
+            "value": "191113",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191114",
+            "name": "20180315",
+            "value": "191114",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191115",
+            "name": "20180315",
+            "value": "191115",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191116",
+            "name": "20180315",
+            "value": "191116",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191117",
+            "name": "20180315",
+            "value": "191117",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191118",
+            "name": "20180315",
+            "value": "191118",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191119",
+            "name": "20180315",
+            "value": "191119",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191120",
+            "name": "20180315",
+            "value": "191120",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191121",
+            "name": "20180315",
+            "value": "191121",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191122",
+            "name": "20180315",
+            "value": "191122",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191123",
+            "name": "20180315",
+            "value": "191123",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191124",
+            "name": "20180315",
+            "value": "191124",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191125",
+            "name": "20180315",
+            "value": "191125",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191126",
+            "name": "20180315",
+            "value": "191126",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "191127",
+            "name": "20180315",
+            "value": "191127",
+            "category": "公告",
+            "itemStyle": {
+                "normal": {
+                    "color": "#C9B3D1"
+                }
+            }
+        },
+        {
+            "id": "68420",
+            "name": "万科A",
+            "value": "68420",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68422",
+            "name": "世纪星源",
+            "value": "68422",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68426",
+            "name": "中国宝安",
+            "value": "68426",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68427",
+            "name": "美丽生态",
+            "value": "68427",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68428",
+            "name": "深物业A",
+            "value": "68428",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68429",
+            "name": "南玻A",
+            "value": "68429",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68430",
+            "name": "沙河股份",
+            "value": "68430",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68431",
+            "name": "深康佳A",
+            "value": "68431",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68432",
+            "name": "*ST中华A",
+            "value": "68432",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68434",
+            "name": "深华发A",
+            "value": "68434",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68435",
+            "name": "深科技",
+            "value": "68435",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68436",
+            "name": "深天地A",
+            "value": "68436",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68437",
+            "name": "特力A",
+            "value": "68437",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68438",
+            "name": "飞亚达",
+            "value": "68438",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68439",
+            "name": "深圳能源",
+            "value": "68439",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68440",
+            "name": "国药一致",
+            "value": "68440",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68442",
+            "name": "富奥股份",
+            "value": "68442",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68447",
+            "name": "华联控股",
+            "value": "68447",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68448",
+            "name": "深南电A",
+            "value": "68448",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68450",
+            "name": "中集集团",
+            "value": "68450",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68451",
+            "name": "东旭蓝天",
+            "value": "68451",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68453",
+            "name": "深纺织A",
+            "value": "68453",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68456",
+            "name": "德赛电池",
+            "value": "68456",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68457",
+            "name": "深天马A",
+            "value": "68457",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68458",
+            "name": "方大集团",
+            "value": "68458",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68460",
+            "name": "深赛格",
+            "value": "68460",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68461",
+            "name": "华锦股份",
+            "value": "68461",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68462",
+            "name": "中金岭南",
+            "value": "68462",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68464",
+            "name": "深圳华强",
+            "value": "68464",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68466",
+            "name": "北方国际",
+            "value": "68466",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68467",
+            "name": "中国长城",
+            "value": "68467",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68468",
+            "name": "华控赛格",
+            "value": "68468",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68469",
+            "name": "华侨城A",
+            "value": "68469",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68470",
+            "name": "特发信息",
+            "value": "68470",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68471",
+            "name": "海王生物",
+            "value": "68471",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68472",
+            "name": "盐田港",
+            "value": "68472",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68473",
+            "name": "深圳机场",
+            "value": "68473",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68474",
+            "name": "天健集团",
+            "value": "68474",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68475",
+            "name": "广聚能源",
+            "value": "68475",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68476",
+            "name": "中信海直",
+            "value": "68476",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68477",
+            "name": "TCL科技",
+            "value": "68477",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68478",
+            "name": "宜华健康",
+            "value": "68478",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68480",
+            "name": "丰原药业",
+            "value": "68480",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68483",
+            "name": "中联重科",
+            "value": "68483",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68485",
+            "name": "国际实业",
+            "value": "68485",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        },
+        {
+            "id": "68486",
+            "name": "申万宏源",
+            "value": "68486",
+            "category": "股票",
+            "itemStyle": {
+                "normal": {
+                    "color": "#F9E5E5"
+                }
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "68419",
+            "target": "68071",
+            "type": "概念属于"
+        },
+        {
+            "source": "68419",
+            "target": "68084",
+            "type": "概念属于"
+        },
+        {
+            "source": "68419",
+            "target": "58602",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58603",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58604",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58605",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58606",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58607",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58608",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58609",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58610",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58611",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58612",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58613",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58614",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58615",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58616",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58617",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58618",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58619",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58620",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58621",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58622",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58623",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58624",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58625",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58626",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58627",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58628",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58629",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58630",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58631",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58632",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58633",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58634",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58635",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58636",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58637",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58638",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58639",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58640",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58641",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58642",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58643",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58644",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58645",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58646",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58647",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58648",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58649",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58650",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "58651",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191068",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191069",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191070",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191071",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191072",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191073",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191074",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191075",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191076",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191077",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191078",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191079",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191080",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191081",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191082",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191083",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191084",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191085",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191086",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191087",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191088",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191089",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191090",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191091",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191092",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191093",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191094",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191095",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191096",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191097",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191098",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191099",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191100",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191101",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191102",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191103",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191104",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191105",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191106",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191107",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191108",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191109",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191110",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191111",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191112",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191113",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191114",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191115",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191116",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191117",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191118",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191119",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191120",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191121",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191122",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191123",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191124",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191125",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191126",
+            "type": "发布公告"
+        },
+        {
+            "source": "68419",
+            "target": "191127",
+            "type": "发布公告"
+        },
+        {
+            "source": "512",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "513",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "514",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "515",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "516",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "517",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "518",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "519",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "520",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "521",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "522",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "523",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "524",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "525",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "526",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "527",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "528",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "529",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "530",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "531",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "532",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "533",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "534",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "535",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "536",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "537",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "538",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "539",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "540",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "541",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "542",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "543",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "544",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "545",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "546",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "547",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "548",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "549",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "550",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "551",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "552",
+            "target": "68419",
+            "type": "参股"
+        },
+        {
+            "source": "68419",
+            "target": "68419",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68420",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68422",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68426",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68427",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68428",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68429",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68430",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68431",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68432",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68434",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68435",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68436",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68437",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68438",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68439",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68440",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68442",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68447",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68448",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68450",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68451",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68453",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68456",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68457",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68458",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68460",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68461",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68462",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68464",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68466",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68467",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68468",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68469",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68470",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68471",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68472",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68473",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68474",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68475",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68476",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68477",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68478",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68480",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68483",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68485",
+            "type": "CORRELATES"
+        },
+        {
+            "source": "68419",
+            "target": "68486",
+            "type": "CORRELATES"
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knowledge Graph</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.1.2/echarts.min.js"></script>
+</head>
+<body>
+    <div id="main" style="width: 100%; height: 600px;"></div>
+    <input type="text" id="question" placeholder="Ask a question">
+    <button onclick="askQuestion()">Ask</button>
+    <div id="answer"></div>
+    <script>
+        fetch('/api/graph/')
+            .then(response => response.json())
+            .then(data => {
+                var myChart = echarts.init(document.getElementById('main'));
+                var option = {
+                    title: {
+                        text: '平安银行知识图谱'
+                    },
+                    tooltip: {},
+                    legend: [{
+                        data: ['股票', '概念', '公告']
+                    }],
+                    series: [
+                        {
+                            type: 'graph',
+                            layout: 'force',
+                            symbolSize: 50,
+                            roam: true,
+                            label: {
+                                show: true,
+                                position: 'inside',
+                                formatter: '{b}'
+                            },
+                            force: {
+                                repulsion: 1000
+                            },
+                            edgeSymbol: ['circle', 'arrow'],
+                            edgeSymbolSize: [4, 10],
+                            edgeLabel: {
+                                show: true,
+                                formatter: function (x) {
+                                    return x.data.type;  // 显示边的标签
+                                }
+                            },
+                            data: data.nodes,  // 从 data 中获取节点数据
+                            links: data.links,  // 从 data 中获取边数据
+                            categories: [
+                                {name: '股票'},
+                                {name: '概念'},
+                                {name: '公告'}
+                            ],
+                            lineStyle: {
+                                color: 'source',
+                                curveness: 0.3
+                            }
+                        }
+                    ]
+                };
+                myChart.setOption(option);
+            });
+
+        function askQuestion() {
+            var question = document.getElementById('question').value;
+            fetch('/api/answer/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({question: question})
+            })
+            .then(response => response.json())
+            .then(data => {
+                var answerDiv = document.getElementById('answer');
+                answerDiv.innerHTML = 'Answer: ' + data.answer.join(', ');
+            });
+        }
+    </script>
+</body>
+</html>

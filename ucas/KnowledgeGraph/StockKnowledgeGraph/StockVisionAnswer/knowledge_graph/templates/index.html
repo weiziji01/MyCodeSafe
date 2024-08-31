@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%; background-color: rgb(240, 248, 255);">
+<head>
+    <meta charset="UTF-8">
+    <title>股票知识图谱</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.1.2/echarts.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            justify-content: space-between;
+            background-color: rgb(240, 248, 255);
+        }
+        .left-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 20%;
+            padding: 20px;
+            justify-content: space-between;
+            height: 95%;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            height: 10%;
+        }
+        .button {
+            height: 5%;
+            display: flex;
+            align-items: center;
+        }
+        .footer a {
+            text-decoration: none;
+            background-color: #A67EB7;
+            color: #ffffff;
+            padding: 20px 60px;
+            border-radius: 5px;
+        }
+        .stats-total {
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 101;
+        }
+        .stats-total div {
+            font-size: 30px;
+            text-align: left;
+            font-weight: bold;
+            z-index: 101;
+        }
+        .stats-total div:first-child {
+            font-size: 25px;
+            font-weight: normal;
+        }
+        .stats_title{
+            height: 5%;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .stats {
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background-color: #ffffff;
+            width: 60%;
+            z-index: 50;
+            box-shadow: -3px 3px 5px#a9a9a9;
+            
+        }
+        .stats .item {
+            height: 10%;
+            font-size: 20px;
+            text-align: left;
+            margin-bottom: 10%;
+            z-index: 101;
+        }
+        .center-panel {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #graph {
+            width: 100%;
+            height: 100%;
+        }
+        .right-panel {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            padding: 20px;
+        }
+        .chart {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        #bar {
+            height: 50%;
+        }
+        #pie {
+            height: 50%;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 20%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(240, 248, 255);
+            padding: 20px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 100%;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <div class="left-panel">
+        <div class="header">股票知识图谱</div>
+        <div class="button footer">
+            <a id="questionButton">智能问答</a>
+        </div>
+        <div class="stats-total">
+            <div>全部数据量:</div>
+            <div>354,300</div>
+        </div>
+        <div class="stats_title">数据数量:</div>
+        <div class="stats">
+            <div class="item">➤ 公告 <span style="color: #a9a9a9;">999</span></div>
+            <div class="item">➤ 概念 <span style="color: #a9a9a9;">358</span></div>
+            <div class="item">➤ 沪股通 <span style="color: #a9a9a9;">582</span></div>
+            <div class="item">➤ 深股通 <span style="color: #a9a9a9;">243</span></div>
+            <div class="item">➤ 股东 <span style="color: #a9a9a9;">165888</span></div>
+            <div class="item">➤ 股票 <span style="color: #a9a9a9;">4138</span></div>
+        </div>
+    </div>
+    <div class="center-panel">
+        <div id="graph"></div>
+    </div>
+    <div class="right-panel">
+        <div id="pie" class="chart"></div>
+        <div id="bar" class="chart"></div>
+    </div>
+    <!-- Modal -->
+    <div id="questionModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>智能问答</h2>
+            <input type="text" id="questionInput" placeholder="请输入您的问题">
+            <button id="submitQuestion">提交</button>
+            <div id="answer"></div>
+        </div>
+    </div>
+
+    <script>
+        // Existing scripts for charts...
+        
+        // Modal script
+        var modal = document.getElementById("questionModal");
+        var btn = document.getElementById("questionButton");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        document.getElementById("submitQuestion").onclick = function() {
+            var question = document.getElementById("questionInput").value;
+            fetch('/api/answer_question/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': getCookie('csrftoken')
+                },
+                body: JSON.stringify({ question: question })
+            })
+            .then(response => response.json())
+            .then(data => {
+                var answerDiv = document.getElementById("answer");
+                // answerDiv.innerHTML = data.answer;
+                answerDiv.innerHTML = 'Answer: ' + data.answer;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                answerDiv.innerHTML = "出错了，请稍后再试。";
+            });
+        }
+
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+    </script>
+    <script>
+        fetch('/api/graph/')
+            .then(response => response.json())
+            .then(data => {
+                var graphChart = echarts.init(document.getElementById('graph'));
+                var option = {
+                    title: {
+                        text: '平安银行知识图谱'
+                    },
+                    tooltip: {},
+                    legend: [{
+                        data: ['股票', '概念', '公告']
+                    }],
+                    color:['#87C2D2','#00FF00','#0000FF','#F9E5E5','#F08B9D','#C9B3D1',],
+                    series: [
+                        {
+                            type: 'graph',
+                            layout: 'force',
+                            symbolSize: 50,
+                            roam: true,
+                            label: {
+                                show: true,
+                                position: 'inside',
+                                formatter: '{b}'
+                            },
+                            force: {
+                                repulsion: 1000
+                            },
+                            emphasis: {
+                                // 设置高亮时的样式
+                                label: {
+                                    show: true,
+                                    position: 'inside',
+                                    fontSize: 16 // 可根据需要调整字体大小
+                                },
+                                scale: true // 鼠标悬停时放大节点
+                           
+                            },
+                            edgeSymbol: ['circle', 'arrow'],
+                            edgeSymbolSize: [4, 10],
+                            edgeLabel: {
+                                show: true,
+                                formatter: function (x) {
+                                    return x.data.type;  // 显示边的标签
+                                }
+                            },
+                            data: data.nodes,
+                            links: data.links,
+                            categories: [
+                                { name: '股票', itemStyle: { color: 'rgb(249, 229, 229)' } },
+                                { name: '概念', itemStyle: { color: 'rgb(240, 139, 157)' } },
+                                { name: '公告', itemStyle: { color: 'rgb(201, 179, 209)' } }
+                            ],
+                        }
+                    ]
+                };
+                graphChart.setOption(option);
+            });
+
+        // 示例数据，从Neo4j获取后处理成如下格式
+        const barData = [
+            { name: '方大集团', count: 100 },
+            { name: '广博股份', count: 96 },
+            { name: '银泰黄金', count: 90 },
+            { name: '盛新锂能', count: 85 },
+            { name: '巨人网络', count: 70 },
+            { name: '雷科防务', count: 50 },
+            { name: '长荣股份', count: 40 },
+            { name: '长汇能源', count: 30 },
+            { name: '澳洋健康', count: 20 },
+            { name: '华图山鼎', count: 10 }
+        ];
+
+        const stockNames = barData.map(item => item.name);
+        const holdingCounts = barData.map(item => item.count);
+
+        var barChart = echarts.init(document.getElementById('bar'));
+
+        var barOption = {
+            title: {
+                    show:true,
+                    text:'股东数量排名TOP10股票',
+                    left:'center'
+                },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            xAxis: {
+                type: 'category',
+                data: stockNames,
+                axisLabel: {
+                    interval: 0,
+                    rotate: 50
+                }
+            },
+            yAxis: {
+                show: false
+            },
+            series: {
+                name: '参股数量',
+                type: 'bar',
+                data: holdingCounts,
+                itemStyle: {
+                    color: function(params) {
+                        var colorList = [
+                            'rgb(135, 194, 210)', 
+                            'rgb(249, 229, 229)', 
+                            'rgb(240, 139, 157)', 
+                            'rgb(147, 213, 220)',
+                            'rgb(14, 176, 201)',
+                            'rgb(221, 107, 123)',
+                            'rgb(221, 107, 123,0.7)',
+                            'rgb(135, 194, 210)',
+                            'rgb(240, 139, 157)',
+                            'rgb(156, 217, 218)',
+                        ];
+                        return colorList[params.dataIndex % colorList.length];
+                    }
+                }
+            }
+        };
+
+        barChart.setOption(barOption);
+
+        var pieChart = echarts.init(document.getElementById('pie'));
+
+        var pieData = [
+            { value: 472, name: 'MSCI' },
+            { value: 417, name: '破净股' },
+            { value: 404, name: '股权转让' },
+            { value: 395, name: '业绩预增' },
+            { value: 303, name: '央企改革' }
+        ];
+
+        var pieOption = {
+            title: {
+                    show:true,
+                    text:'概念股占比图',
+                    left:'center'
+                },
+            tooltip: {
+                trigger: 'item',
+                formatter: '{a} <br/>{b}: {c} ({d}%)'
+            },
+            series: [{
+                name: '概念股的占比',
+                type: 'pie',
+                radius: ['50%', '70%'],
+                avoidLabelOverlap: false,
+                label: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    label: {
+                        show: true,
+                        fontSize: '20',
+                        fontWeight: 'bold'
+                    }
+                },
+                labelLine: {
+                    show: false
+                },
+                data: pieData
+            }]
+        };
+
+        pieChart.setOption(pieOption);
+    </script>
+</body>
+</html>

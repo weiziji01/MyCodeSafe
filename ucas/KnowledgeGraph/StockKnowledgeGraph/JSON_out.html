@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%; background-color: rgb(240, 248, 255);">
+<head>
+    <meta charset="utf-8">
+    <title>金融知识图谱</title>
+    <!-- 引入 ECharts 文件 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.3.3/echarts.min.js"></script>
+</head>
+<body style="height: 100%; margin: 0; background-color: rgb(240, 248, 255);">
+    <div style="position: absolute; top: 20px; left: 40px; font-size: 24px; font-weight: bold;">金融知识图谱</div>
+    <div style="position: absolute; top: 210px; left: 40px; font-size: 15px; font-weight: normal;">全部数据量:</div>
+    <div style="position: absolute; top: 240px; left: 40px; font-size: 30px; font-weight: bold;">354,300</div>
+    <div style="position: absolute; top: 310px; left: 40px; font-size: 18px; font-weight: bold;">数据数量:</div>
+    <div style="position: absolute; top: 350px; left: 48px; font-size: 13px; font-weight: normal; z-index: 101;">➤ 公告</div>
+    <div style="position: absolute; top: 400px; left: 48px; font-size: 13px; font-weight: normal; z-index: 101;">➤ 概念</div>
+    <div style="position: absolute; top: 450px; left: 48px; font-size: 13px; font-weight: normal; z-index: 101;">➤ 沪股通</div>
+    <div style="position: absolute; top: 500px; left: 48px; font-size: 13px; font-weight: normal; z-index: 101;">➤ 深股通</div>
+    <div style="position: absolute; top: 550px; left: 48px; font-size: 13px; font-weight: normal; z-index: 101;">➤ 股东</div>
+    <div style="position: absolute; top: 600px; left: 48px; font-size: 13px; font-weight: normal; z-index: 101;">➤ 股票</div>
+    <div style="position: absolute; top: 350px; left: 180px; font-size: 13px; font-weight: normal; z-index: 101; color: #a9a9a9;">999</div>
+    <div style="position: absolute; top: 400px; left: 180px; font-size: 13px; font-weight: normal; z-index: 101; color: #a9a9a9;">358</div>
+    <div style="position: absolute; top: 450px; left: 180px; font-size: 13px; font-weight: normal; z-index: 101; color: #a9a9a9;">582</div>
+    <div style="position: absolute; top: 500px; left: 180px; font-size: 13px; font-weight: normal; z-index: 101; color: #a9a9a9;">243</div>
+    <div style="position: absolute; top: 550px; left: 180px; font-size: 13px; font-weight: normal; z-index: 101; color: #a9a9a9;">165888</div>
+    <div style="position: absolute; top: 600px; left: 180px; font-size: 13px; font-weight: normal; z-index: 101; color: #a9a9a9;">4138</div>
+    <div style="position: absolute; top: 310px; left: 1050px; font-size: 16px; font-weight: bold;">股东数量排名TOP10股票</div>
+    <div class="rectangle"></div>
+    <style>
+        .rectangle {
+            position: absolute;
+            bottom: 20px;
+            left: 40px;
+            width: 200px; /* 设置宽度 */
+            height: 280px; /* 设置高度 */
+            background-color: rgba(255, 255, 255, 1); /* 设置背景色 */
+            z-index: 50; /* 置于底层 */
+            box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+        #bar {
+            position: absolute;
+            width: 60%;
+            max-width: 300px;
+            height: 350px;
+            margin: auto;
+            padding-top: 5px;
+            top: 77%; /* 调整柱状图垂直居中 */
+            left: 90%; /* 调整柱状图水平居中 */
+            transform: translate(-50%, -50%); /* 让柱状图水平垂直居中 */
+        }
+        #pie {
+            position: absolute;
+            width: 60%;
+            max-width: 300px;
+            height: 350px;
+            margin: auto;
+            padding-top: 5px;
+            top: 20%; /* 调整柱状图垂直居中 */
+            left: 90%; /* 调整柱状图水平居中 */
+            transform: translate(-50%, -50%); /* 让柱状图水平垂直居中 */
+        }
+    </style>
+    
+    <!-- 为ECharts准备3个具备大小（宽高）的Dom -->
+    <div id="graph" style="position: absolute; top: 5px; left: 260px; width: 750px; height: 700px;"></div>
+    <div id="bar"></div>
+    <div id="pie"></div>
+    <div style="position: absolute; bottom: 510px; left: 40px;">
+        <a href="new.html" style="text-decoration: none; background-color: #A67EB7; color: #ffffff; padding: 20px 60px; border-radius: 5px;">智能问答</a>
+    </div>
+
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var graphChart = echarts.init(document.getElementById('graph'));
+
+        // 使用fetch API从JSON文件加载数据
+        fetch('Pingan.json') // 与HTML文件在同一目录下
+            .then(response => response.json()) // 解析JSON数据
+            .then(data => {
+                let nodes = []; // 存储节点
+                let links = []; // 存储边
+
+                // 遍历原始数据并转换为ECharts所需格式
+                data.forEach(item => {
+                    let start = item.p.start;
+                    let end = item.p.end;
+                    let source = item.p.segments[0].start;
+                    let target = item.p.segments[0].end;
+                    let relationship = item.p.segments[0].relationship; // 假设只有一个segments
+
+                    // 添加节点（如果尚未添加）
+                    if (!nodes.some(node => node.id === start.identity)) {
+                        let color;
+                        if (start.labels[0] === "股票") {
+                            color = 'rgb(135, 194, 210)'; // 蓝色
+                        } else if (start.labels[0] === "概念") {
+                            color = 'rgb(0, 255, 0)'; // 绿色
+                        } else if (start.labels[0] === "公告") {
+                            color = 'rgb(0, 0, 255)'; // 蓝色
+                        }
+
+                        nodes.push({
+                            id: start.identity,
+                            name: start.properties.股票名称 || start.properties.概念名称 || start.properties.日期, // 假设每个节点只有一个标签
+                            category: start.labels[0],
+                            itemStyle: { color: color } // 设置节点颜色
+                        });
+                    }
+                    if (!nodes.some(node => node.id === end.identity)) {
+                        let color;
+                        if (end.labels[0] === "股票") {
+                            color = 'rgb(249, 229, 229)'; // 粉色
+                        } else if (end.labels[0] === "概念") {
+                            color = 'rgb(240, 139, 157)'; // 粉色
+                        } else if (end.labels[0] === "公告") {
+                            color = 'rgb(201, 179, 209)'; // 紫色
+                        }
+
+                        nodes.push({
+                            id: end.identity,
+                            name: end.properties.股票名称 || end.properties.概念名称 || end.properties.日期, // 假设每个节点只有一个标签
+                            category: end.labels[0],
+                            itemStyle: { color: color } // 设置节点颜色
+                        });
+                    }
+
+                    // 添加边
+                    links.push({
+                        source: source.identity.toString(), // 开始节点的ID
+                        target: target.identity.toString(), // 结束节点的ID
+                        value: relationship.type, // 边的标签（关系类型）
+                        // 可以添加其他属性，如线的样式等...
+                    });
+                });
+
+                // 设置ECharts的option
+                let option = {
+                    tooltip: {},
+                    legend: {
+                        data: ['股票', '概念', '公告']
+                    },
+                    series: [
+                        {
+                            type: 'graph',
+                            layout: 'force', // 或者其他布局
+                            symbolSize: 50,
+                            roam: true,
+                            label: {
+                                show: true,
+                                position: 'inside',
+                                formatter: '{b}'
+                            },
+                            force: {
+                                repulsion: 1000
+                            },
+                            emphasis: {
+                                // 设置高亮时的样式
+                                label: {
+                                    show: true,
+                                    position: 'inside',
+                                    fontSize: 16 // 可根据需要调整字体大小
+                                },
+                                scale: true // 鼠标悬停时放大节点
+                           
+                            },
+                            edgeSymbol: ['circle', 'arrow'],
+                            edgeSymbolSize: [4, 10],
+                            edgeLabel: {
+                                fontSize: 20,
+                                formatter: function (x) {
+                                    return x.data.value;
+                                }
+                            },
+                            data: nodes, // 节点数据
+                            links: links, // 边数据
+                            categories: [
+                                { name: '股票', itemStyle: { color: 'rgb(249, 229, 229)' } },
+                                { name: '概念', itemStyle: { color: 'rgb(240, 139, 157)' } },
+                                { name: '公告', itemStyle: { color: 'rgb(201, 179, 209)' } }
+                            ]
+                        }
+                    ]
+                };
+
+                // 使用刚指定的配置项和数据显示图表。
+                graphChart.setOption(option);
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+    </script>
+
+    <script type="text/javascript">
+        // 示例数据，从Neo4j获取后处理成如下格式
+        const data = [
+            { name: '方大集团', count: 100 },
+            { name: '广博股份', count: 96 },
+            { name: '银泰黄金', count: 90 },
+            { name: '盛新锂能', count: 85 },
+            { name: '巨人网络', count: 70 },
+            { name: '雷科防务', count: 50 },
+            { name: '长荣股份', count: 40 },
+            { name: '长汇能源', count: 30 },
+            { name: '澳洋健康', count: 20 },
+            { name: '华图山鼎', count: 10 }
+        ];
+
+        // 提取名称和数量数组
+        const stockNames = data.map(item => item.name);
+        const holdingCounts = data.map(item => item.count);
+
+        // 基于准备好的dom，初始化echarts实例
+        var barChart = echarts.init(document.getElementById('bar'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            xAxis: {
+                type: 'category',
+                data: stockNames,
+                axisLabel: {
+                    interval: 0,
+                    rotate: 50
+                }
+            },
+            yAxis: {
+                show: false // 将此处的引号更改为 false
+            },
+            series: {
+                name: '参股数量',
+                type: 'bar',
+                data: holdingCounts,
+                itemStyle: {
+                    color: function(params) {
+                        var colorList = [
+                            'rgb(135, 194, 210)', // 第一个柱子的颜色
+                            'rgb(249, 229, 229)', // 第二个柱子的颜色
+                            'rgb(240, 139, 157)', // 第三个柱子的颜色
+                            'rgb(147, 213, 220)',
+                            'rgb(14, 176, 201)',
+                            'rgb(221, 107, 123)',
+                            'rgb(221, 107, 123,0.7)',
+                            'rgb(135, 194, 210)',
+                            'rgb(240, 139, 157)',
+                            'rgb(156, 217, 218)',
+                            // 添加更多颜色...
+                        ];
+                        return colorList[params.dataIndex % colorList.length];
+                    }
+                }
+            }
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        barChart.setOption(option);
+    </script>
+
+
+
+
+<script type="text/javascript">
+    var pieChart = echarts.init(document.getElementById('pie'));
+
+    // 定义饼图的数据
+    var pieData = [
+        { value: 472, name: 'MSCI' },
+        { value: 417, name: '破净股' },
+        { value: 404, name: '股权转让' },
+        { value: 395, name: '业绩预增' },
+        { value: 303, name: '央企改革' }
+    ];
+
+    // 配置饼图的参数
+    var pieOption = {
+    
+        tooltip: {
+            trigger: 'item',
+            formatter: '{a} <br/>{b}: {c} ({d}%)'
+        },
+        series: [{
+            name: '访问来源',
+            type: 'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                show: false,
+                position: 'center'
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: '20',
+                    fontWeight: 'bold'
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            data: pieData
+        }]
+    };
+
+    // 使用刚指定的配置项和数据显示图表
+    pieChart.setOption(pieOption);
+</script>
+
+</body>
+</html>
+
+
