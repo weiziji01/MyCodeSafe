@@ -1,4 +1,5 @@
-# fair1m数据集的标注格式改为与dota类似的，即xml改为txt
+#
+# ! fair1m数据集的标注格式改为与dota类似的，即xml改为txt
 import os
 import sys
 import xml.etree.ElementTree as ET
@@ -51,8 +52,9 @@ def update_cate(n):
         name_new = 'other'
     return name_new
 
-indir='/mnt/d/data/fair1m_exp/train/labelXml'   #xml目录
-outdir='/mnt/d/data/fair1m_exp/train/labelTxt'  #txt目录
+
 
 if __name__ == "__main__":
+    indir='/mnt/d/data/fair1m_exp/train/labelXml'   #xml目录
+    outdir='/mnt/d/data/fair1m_exp/train/labelTxt'  #txt目录
     xml_to_txt(indir, outdir)
