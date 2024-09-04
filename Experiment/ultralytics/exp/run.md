@@ -1,4 +1,4 @@
-python try_car.py | tee train.log
+python car_allcolor.py | tee train.log
 
 
 **2024-0821_23-08-09: (使用的是datasets_have_error_split，253张训练，76张验证)**
