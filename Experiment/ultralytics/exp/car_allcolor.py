@@ -19,4 +19,4 @@ time_str = current_time.strftime("%Y-%m-%d_%H-%M-%S")
 DEFAULT_CFG.save_dir = f'/mnt/d/exp/dji_car/{time_str}'
 
 # 训练模型
-results = model.train(data=datasets, epochs=1, imgsz=640,batch=1)
+results = model.train(data=datasets, epochs=300, imgsz=640,batch=1)
