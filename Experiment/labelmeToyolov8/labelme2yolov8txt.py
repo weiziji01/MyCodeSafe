@@ -56,7 +56,7 @@ def convert_labelmes_to_yolo(labelme_folder, output_folder):
  
 def split_data(output_folder, dataset_folder):
     random.seed(0)
-    split_rate = 0.2 #验证集占比
+    split_rate = 0 #验证集占比
     origin_label_path = os.path.join(output_folder, "labels")
     origin_image_path = os.path.join(output_folder, "images")
     train_label_path = os.path.join(dataset_folder, "train", "labels")
@@ -94,10 +94,11 @@ def split_data(output_folder, dataset_folder):
         f.write(f"names: {classes}\n")
  
 if __name__ == '__main__':
-    label_dict = {"BB": 0, "BS": 1, "DB": 2, "DS": 3}
-    labelme_folder = "datasets/mix/" #labelme生成的标注文件所在的文件夹
-    output_folder = "datasets/label_txt/" #存储yolo标注文件的文件夹
-    dataset_folder = "datasets/splitData/" #存储划分好的数据集的文件夹
+    # label_dict = {"BB": 0, "BS": 1, "DB": 2, "DS": 3}
+    label_dict = {"vehicle": 0}
+    labelme_folder = "/home/odysseus/pyFiles/qiyuan_data/" #labelme生成的标注文件所在的文件夹
+    output_folder = "/home/odysseus/pyFiles/qiyuan_data_label_txt/" #存储yolo标注文件的文件夹
+    dataset_folder = "/home/odysseus/pyFiles/qiyuan_splitData/" #存储划分好的数据集的文件夹
     convert_labelmes_to_yolo(labelme_folder, output_folder)#将labelme标注文件转换为yolo格式
     split_data(output_folder, dataset_folder)#划分训练集和验证级
  

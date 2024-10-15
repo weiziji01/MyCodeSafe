@@ -3,8 +3,8 @@
 import os
 import cv2 as cv
  
-image_path = 'datasets/images'    #设置图片读取路径
-save_path = 'datasets/images_jpg/'    #设置图片保存路径，新建文件夹，不然其他格式会依然存在
+image_path = '/home/odysseus/pyFiles/qiyuan_data/images_png/'    #设置图片读取路径
+save_path = '/home/odysseus/pyFiles/qiyuan_data/images_jpg/'    #设置图片保存路径，新建文件夹，不然其他格式会依然存在
  
 if not os.path.exists(save_path):    #判断路径是否正确，并打开
     os.makedirs(save_path)

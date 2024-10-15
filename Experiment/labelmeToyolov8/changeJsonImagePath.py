@@ -6,7 +6,7 @@ import os
 import re
 
 # ! 下面是路径修改的地方 
-path = 'datasets/mix/'  # json文件路径
+path = '/home/odysseus/pyFiles/qiyuan_data/'  # json文件路径
 # ! 上面是路径修改的地方
 
 dirs = os.listdir(path)

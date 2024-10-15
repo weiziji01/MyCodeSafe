@@ -4,8 +4,8 @@ import os
 import shutil
 
 # ! 下面是路径修改的地方
-source_path = os.path.abspath('datasets/')     #源文件夹
-target_path = os.path.abspath('datasets/mix/')    #目标文件夹
+source_path = os.path.abspath('')     #源文件夹
+target_path = os.path.abspath('')    #目标文件夹
 # ! 上面是路径修改的地方
 
 if not os.path.exists(target_path):     #目标文件夹不存在就新建
