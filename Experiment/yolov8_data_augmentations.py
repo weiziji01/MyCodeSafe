@@ -1,7 +1,5 @@
 #
-# * 对很少的yolov8数据进行数据增强
-# import albumentations as A
-# import albumentations as A
+# ! 对很少的yolov8数据进行数据增强，以扩充数据集的数量
 import albumentations as A
 import cv2
 import os
