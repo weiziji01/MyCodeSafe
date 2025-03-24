@@ -27,7 +27,7 @@ def print_category_statistics(category_count):
         print(f"Category: {category}, Count: {count}")
 
 # 示例使用
-annotation_dir = '/mnt/d/exp/sodaa_sob/datasets/train/labels/'  # 替换为你的标注文件夹路径
+annotation_dir = '/mnt/d/data/visdrone2019/visdrone2019/train/labels/'  # 替换为你的标注文件夹路径
 category_count = count_dota_categories(annotation_dir)
 print_category_statistics(category_count)
 
@@ -41,3 +41,15 @@ print_category_statistics(category_count)
 # Category: windmill, Count: 16786
 # Category: swimming-pool, Count: 22712
 # Category: helicopter, Count: 1084
+
+# VisDrone2019-Train-split: Category Statistics:
+# Category: people, Count: 31829
+# Category: pedestrian, Count: 74628
+# Category: van, Count: 21304
+# Category: car, Count: 98549
+# Category: truck, Count: 15506
+# Category: motor, Count: 31765
+# Category: bicycle, Count: 14751
+# Category: tricycle, Count: 6648
+# Category: awning-tricycle, Count: 4234
+# Category: bus, Count: 6729
