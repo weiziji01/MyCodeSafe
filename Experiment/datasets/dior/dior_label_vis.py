@@ -63,6 +63,6 @@ def visualize_annotations(xml_path, image_folder):
 
 if __name__ == '__main__':
     # 使用示例
-    xml_path = "/mnt/d/data/dior-r/DIOR-R/Annotations/Oriented Bounding Boxes/00166.xml"  # XML文件路径
+    xml_path = "/mnt/d/data/dior-r/DIOR-R/Annotations/Oriented Bounding Boxes/04137.xml"  # XML文件路径
     image_folder = "/mnt/d/data/dior-r/DIOR-R/JPEGImages-trainval/"           # 图片所在目录
     visualize_annotations(xml_path, image_folder)
