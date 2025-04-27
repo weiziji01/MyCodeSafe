@@ -1,0 +1,16 @@
+=== DOTA Dataset Inspection Report ===
+Total files scanned: 6471
+Total objects: 343205
+Invalid objects: 1
+
+Problem Type Distribution:
+- zero area: 1 (100.0%)
+
+Data Augmentation Recommendations:
+1. Disable the following augmentations:
+   - InstaBoost (may generate invalid boxes)
+   - RandomCrop (may create tiny objects)
+   - Extreme Scaling (scale_min > 0.3 recommended)
+2. Add post-augmentation validation:
+   - Check bounding box area > 1 pixel
+   - Verify width/height > 1 pixel after augmentation
