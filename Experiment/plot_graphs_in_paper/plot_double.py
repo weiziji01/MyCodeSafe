@@ -52,7 +52,7 @@ def plot_double_y(x, y1, y2, color_y1, color_y2, title, xlabel, ylabel, save_pat
     mpl.rcParams["font.sans-serif"] = ["Times New Roman"]
 
     # ---- 绘图
-    fig, ax = plt.subplots(figsize=(13, 5))
+    fig, ax = plt.subplots(figsize=(12, 5))
     (line1,) = ax.plot(
         x,
         y1,
@@ -99,8 +99,8 @@ def plot_double_y(x, y1, y2, color_y1, color_y2, title, xlabel, ylabel, save_pat
         )
 
     # ax.set_title(title, fontsize=18, pad=18)
-    ax.set_xlabel(xlabel, fontsize=18)
-    ax.set_ylabel(ylabel, fontsize=18)
+    ax.set_xlabel(xlabel, fontsize=23)
+    ax.set_ylabel(ylabel, fontsize=23)
 
     # ---- 图例设置
     y1_last = y1.iloc[-1]
@@ -113,7 +113,7 @@ def plot_double_y(x, y1, y2, color_y1, color_y2, title, xlabel, ylabel, save_pat
         color=line1.get_color(),
         va="center",
         ha="left",
-        size=18,
+        size=25,
     )
 
     y2_lengend = ax.text(
@@ -123,16 +123,16 @@ def plot_double_y(x, y1, y2, color_y1, color_y2, title, xlabel, ylabel, save_pat
         color=line2.get_color(),
         va="center",
         ha="left",
-        size=18,
+        size=25,
     )
 
     # ---- 设置坐标轴与刻度
-    ax.xaxis.set_major_locator(ticker.MultipleLocator(5))
+    ax.xaxis.set_major_locator(ticker.MultipleLocator(10))
     ax.xaxis.set_tick_params(
-        length=2, color="#4E616C", labelcolor="#4E616C", labelsize=14
+        length=2, color="#4E616C", labelcolor="#4E616C", labelsize=20
     )
     ax.yaxis.set_tick_params(
-        length=2, color="#4E616C", labelcolor="#4E616C", labelsize=14
+        length=2, color="#4E616C", labelcolor="#4E616C", labelsize=20
     )
     ax.spines["bottom"].set_edgecolor("#4E616C")
 
@@ -143,16 +143,16 @@ def plot_double_y(x, y1, y2, color_y1, color_y2, title, xlabel, ylabel, save_pat
 
 if __name__ == "__main__":
     excel_path = (
-        "/mnt/d/learning/空天院/论文/01-paper1/SCA计算/visdrone/similar_object_statistics/结果统计.xlsx"
+        "/mnt/d/learning/空天院/论文/01-paper1/SCA计算/sodaa/similar_object_statistics/结果统计.xlsx"
     )
     data = pd.read_excel(excel_path)
-    save_path = "/mnt/d/learning/空天院/论文/01-paper1/Python绘图/不同目标数量的SCA变化—visdrone-155.svg"
+    save_path = "/mnt/d/learning/空天院/论文/01-paper1/Python绘图/sca_change.pdf"
 
     x = data.iloc[:, 0]
     y1 = data.iloc[:, 2]
     y2 = data.iloc[:, 3]
     title = "SCA on different #Objects"
-    xlabel = data.columns[0]
+    xlabel = "\u03B8"
     ylabel = "aSCA"
     plot_double_y(
         x=x,

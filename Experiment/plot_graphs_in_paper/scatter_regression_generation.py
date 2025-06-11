@@ -29,6 +29,7 @@ def data_get(scores_path, idx_path, category_x, category_y):
     result = scores_pd.loc[valid_idx - 2]
 
     # ---- 得到进行计算的数据，并按照大小赋以不同的标签
+    # similar = result.iloc[:, [3, 5]].copy()
     similar = result.iloc[:, [2, 7]].copy()
     similar["label"] = similar.apply(
         lambda row: category_x if row.iloc[0] > row.iloc[1] else category_y, axis=1
@@ -84,15 +85,17 @@ def plot_similar_category_vis(
     # axes[0].spines['top'].set_visible(False)
     # axes[0].spines['right'].set_visible(False)
     # axes[0].legend()
-    plt.xlabel(category_x)
-    plt.ylabel(category_y)
+    plt.xlabel(category_x, fontsize=15)
+    plt.ylabel(category_y, fontsize=15)
     plt.gca().xaxis.set_major_locator(plt.MultipleLocator(0.1))
     plt.gca().yaxis.set_major_locator(plt.MultipleLocator(0.1))
     plt.xlim(0, 1)
     plt.ylim(0, 1)
     plt.gca().spines['top'].set_visible(False)
     plt.gca().spines['right'].set_visible(False)
-    plt.legend()
+    plt.xticks(fontsize=15)
+    plt.yticks(fontsize=15)
+    plt.legend(prop={'size':15})
     plt.savefig(save_folder_path + "all_data_scatter.tif", dpi=600, bbox_inches='tight')
 
     # ---- 第二个图：按照不同类别为散点图上的点赋以不同的颜色
@@ -116,15 +119,17 @@ def plot_similar_category_vis(
     # axes[1].spines['top'].set_visible(False)
     # axes[1].spines['right'].set_visible(False)
     # axes[1].legend(title=None)  # 去掉图例的标题
-    plt.xlabel(category_x)
-    plt.ylabel(category_y)
+    plt.xlabel(category_x, fontsize=15)
+    plt.ylabel(category_y, fontsize=15)
     plt.gca().xaxis.set_major_locator(plt.MultipleLocator(0.1))
     plt.gca().yaxis.set_major_locator(plt.MultipleLocator(0.1))
     plt.xlim(0, 1)
     plt.ylim(0, 1)
     plt.gca().spines['top'].set_visible(False)
     plt.gca().spines['right'].set_visible(False)
-    plt.legend(title=None)
+    plt.xticks(fontsize=15)
+    plt.yticks(fontsize=15)
+    plt.legend(prop={'size':15})
     plt.savefig(save_folder_path + "category_scatter.tif", dpi=600, bbox_inches='tight')
 
     # ---- 第三个图：为不同的类别的图画上回归直线
@@ -149,15 +154,17 @@ def plot_similar_category_vis(
     # axes[2].spines['top'].set_visible(False)
     # axes[2].spines['right'].set_visible(False)
     # axes[2].legend()
-    plt.xlabel(category_x)
-    plt.ylabel(category_y)
-    plt.gca().xaxis.set_major_locator(plt.MultipleLocator(0.1))
-    plt.gca().yaxis.set_major_locator(plt.MultipleLocator(0.1))
+    plt.xlabel(category_x, fontsize=18)
+    plt.ylabel(category_y, fontsize=18)
+    plt.gca().xaxis.set_major_locator(plt.MultipleLocator(0.2))
+    plt.gca().yaxis.set_major_locator(plt.MultipleLocator(0.2))
     plt.xlim(0, 1)
     plt.ylim(0, 1)
     plt.gca().spines['top'].set_visible(False)
     plt.gca().spines['right'].set_visible(False)
-    plt.legend()
+    plt.xticks(fontsize=18)
+    plt.yticks(fontsize=18)
+    plt.legend(prop={'size':18})
     plt.savefig(save_folder_path + "category_regression.tif", dpi=600, bbox_inches='tight')
 
     # ---- 第四个图：带上了回归直线之间夹角的图
@@ -189,10 +196,15 @@ def plot_similar_category_vis(
 
 if __name__ == "__main__":
     scores_path = "/mnt/d/learning/空天院/论文/01-paper1/0-具有相似特征的目标（large-vehicle和container）/162_800_1300_650_different_category_vis/s2anet_refine_scores_scale_1.csv"
+    # scores_path = "/mnt/d/exp/sodaa_sob/paper1_a6000result/0-comparison_exp/0924_baseline/test/vis_paper_0526/196/196_scores_1.csv"
     idx_path = "/mnt/d/learning/空天院/论文/01-paper1/0-具有相似特征的目标（large-vehicle和container）/162_800_1300_650_different_category_vis/s2anet_refine_idx_scale_1.csv"
+    # idx_path = "/mnt/d/exp/sodaa_sob/paper1_a6000result/0-comparison_exp/0924_baseline/test/vis_paper_0526/196/196_idx_1.csv"
+    # category_x = "large vehicle"
     category_x = "small vehicle"
+    # category_y = "container"
     category_y = "swimming pool"
-    save_folder_path = "/mnt/d/learning/空天院/论文/01-paper1/Python绘图/162_1300_650_scatter_regression/"
+    save_folder_path = "/mnt/d/learning/空天院/论文/01-paper1/visio画图/1-修改图/Introducition里的介绍图/162_vis/"
+    # save_folder_path = "/mnt/d/exp/sodaa_sob/paper1_a6000result/0-comparison_exp/0924_baseline/test/vis_paper_0526/196/vis_new"
 
     data, angle = data_get(
         scores_path=scores_path,
